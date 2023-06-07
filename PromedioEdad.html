@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Promedio de Edad</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <h1>Navegador</h1>
+
+  <ul>
+    <li><a href="./PagoCuotas.html">Calculadora de Pagos en Cuotas</a></li>
+  </ul>
+
+  <h2>Calculadora de Promedio de Edad</h2>
+
+  <form onsubmit="event.preventDefault(); calcularPromedioEdad();">
+    <label for="cantidad-personas">Cantidad de personas:</label>
+    <input type="number" id="cantidad-personas" required><br>
+
+    <div id="edades-container"></div>
+
+    <button type="button" onclick="agregarEdad()">Agregar Edad</button>
+    <button type="submit">Calcular Promedio</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="./js/promedioEdad.js"></script>
+</body>
+</html>
